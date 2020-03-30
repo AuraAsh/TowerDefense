@@ -6,7 +6,7 @@ public class TowerSpot : MonoBehaviour
 {
     void OnMouseUp()
     {
-        Debug.Log("TowerSpot clicked.");
+        //Debug.Log("TowerSpot clicked.");
 
         BuildingManager bm = GameObject.FindObjectOfType<BuildingManager>();
         if(bm.selectedTower != null)
@@ -14,7 +14,7 @@ public class TowerSpot : MonoBehaviour
             ScoreManager sm = GameObject.FindObjectOfType<ScoreManager>();
             if(sm.coins < bm.selectedTower.GetComponent<Tower>().cost)
             {
-                Debug.Log("Not Enough Coins!");
+                //Debug.Log("Not Enough Coins!");
                 return;
             }
 

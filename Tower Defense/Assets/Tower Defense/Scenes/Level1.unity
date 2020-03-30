@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 537413224}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.66882503, g: 0.5676574, b: 0.534528, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 5eda4f9705f51459b9621be5eedc4579,
+  m_LightingDataAsset: {fileID: 112000000, guid: 935f99c9469d09b4381ab44bd37bb0a6,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -3073,21 +3073,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194878189}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  didSpawn: 0
+  timeRespawn: 0
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
     num: 5
+    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
     num: 1
+    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
     num: 5
+    spawned: 0
 --- !u!1 &1226485309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,7 +4568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  coins: 10
+  coins: 1000
   coinsText: {fileID: 1018046509}
   LivesText: {fileID: 675447032}
   gameOverUI: {fileID: 1805564306}
@@ -4726,16 +4731,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  didSpawn: 0
+  timeRespawn: 3
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
-    num: 5
+    num: 15
+    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
-    num: 1
-  - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
-      type: 3}
-    num: 5
+    num: 6
+    spawned: 0
 --- !u!4 &2024283236
 Transform:
   m_ObjectHideFlags: 0
@@ -5382,15 +5388,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144252304}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  didSpawn: 0
+  timeRespawn: 0
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
     num: 5
+    spawned: 0
 --- !u!1001 &3540612162269529458
 PrefabInstance:
   m_ObjectHideFlags: 0

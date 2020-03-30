@@ -40,14 +40,14 @@ public class Tower : MonoBehaviour
         }
         if(nearestEnemy == null)
         {
-            Debug.Log("No enemies?");
+            //Debug.Log("No enemies?");
             return;
         }
         Vector3 dir = nearestEnemy.transform.position - this.transform.position; 
 
         Quaternion lookRot = Quaternion.LookRotation(dir);
 
-        Debug.Log(lookRot.eulerAngles.y);
+        //Debug.Log(lookRot.eulerAngles.y);
         turretTransform.rotation = Quaternion.Euler(0, lookRot.eulerAngles.y , 0);
 
         fireCooldownLeft -= Time.deltaTime;
