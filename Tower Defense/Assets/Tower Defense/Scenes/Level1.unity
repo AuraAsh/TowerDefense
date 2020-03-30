@@ -298,9 +298,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 7d5b20c8a4bb94a7faea8717dd4aced1, type: 3}
 --- !u!1 &139404067
 GameObject:
@@ -3078,21 +3078,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didSpawn: 0
   timeRespawn: 0
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
     num: 5
-    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
     num: 1
-    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
     num: 5
-    spawned: 0
 --- !u!1 &1226485309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,7 +4564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  coins: 1000
+  coins: 20
   coinsText: {fileID: 1018046509}
   LivesText: {fileID: 675447032}
   gameOverUI: {fileID: 1805564306}
@@ -4731,17 +4727,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didSpawn: 0
   timeRespawn: 3
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: 4c517d6462d90804892dc3a2d3a1f491,
       type: 3}
     num: 15
-    spawned: 0
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
     num: 6
-    spawned: 0
 --- !u!4 &2024283236
 Transform:
   m_ObjectHideFlags: 0
@@ -5393,13 +5386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f90b6b4b30e2024ea5ff3cbf41810d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  didSpawn: 0
   timeRespawn: 0
   waveComps:
   - enemyPrefab: {fileID: 2285672620790625590, guid: bfa261b341fb4e0429e1eeb63c4e16d9,
       type: 3}
     num: 5
-    spawned: 0
 --- !u!1001 &3540612162269529458
 PrefabInstance:
   m_ObjectHideFlags: 0
